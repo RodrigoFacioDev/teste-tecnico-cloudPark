@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Input /> faz snapshot do componente 1`] = `
+<TextInput
+  onChangeText={[Function]}
+  placeholder="Snapshot"
+  placeholderTextColor="#999"
+  style={
+    {
+      "borderBottomLeftRadius": 8,
+      "borderBottomRightRadius": 8,
+      "borderColor": "#ccc",
+      "borderTopLeftRadius": 8,
+      "borderTopRightRadius": 8,
+      "borderWidth": 1,
+      "fontSize": 16,
+      "marginBottom": 16,
+      "paddingBottom": 12,
+      "paddingLeft": 12,
+      "paddingRight": 12,
+      "paddingTop": 12,
+      "width": "100%",
+    }
+  }
+  value=""
+/>
+`;
+
+exports[`<Input /> matches the component snapshot 1`] = `
+<TextInput
+  onChangeText={[Function]}
+  placeholder="Snapshot"
+  placeholderTextColor="#999"
+  style={
+    {
+      "borderBottomLeftRadius": 8,
+      "borderBottomRightRadius": 8,
+      "borderColor": "#ccc",
+      "borderTopLeftRadius": 8,
+      "borderTopRightRadius": 8,
+      "borderWidth": 1,
+      "fontSize": 16,
+      "marginBottom": 16,
+      "paddingBottom": 12,
+      "paddingLeft": 12,
+      "paddingRight": 12,
+      "paddingTop": 12,
+      "width": "100%",
+    }
+  }
+  value=""
+/>
+`;
+
+exports[`<Input /> should match the component snapshot when rendered 1`] = `
+<TextInput
+  onChangeText={[Function]}
+  placeholder="Snapshot"
+  placeholderTextColor="#999"
+  style={
+    {
+      "borderBottomLeftRadius": 8,
+      "borderBottomRightRadius": 8,
+      "borderColor": "#ccc",
+      "borderTopLeftRadius": 8,
+      "borderTopRightRadius": 8,
+      "borderWidth": 1,
+      "fontSize": 16,
+      "marginBottom": 16,
+      "paddingBottom": 12,
+      "paddingLeft": 12,
+      "paddingRight": 12,
+      "paddingTop": 12,
+      "width": "100%",
+    }
+  }
+  value=""
+/>
+`;
