@@ -40,3 +40,8 @@ export async function removeLoginStatus() {
     // Tratar erro se necessário
   }
 }
+
+// Função de logout para ser usada na tela de configurações
+export async function logoutUser() {
+  await removeLoginStatus();
+}

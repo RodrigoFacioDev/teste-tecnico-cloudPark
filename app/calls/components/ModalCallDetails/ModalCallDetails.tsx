@@ -29,11 +29,6 @@ function formatDate(dateString: string) {
   });
 }
 
-interface Category {
-  id: string;
-  name: string;
-}
-
 interface ModalCallDetailsProps {
   visible: boolean;
   call: Call;

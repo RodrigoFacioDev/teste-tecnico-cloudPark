@@ -1,43 +1,22 @@
+import { logoutUser } from "@/hooks/useUser";
+import { useRouter } from "expo-router";
 import React from "react";
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { Button, ButtonText, Container, Title } from "./style";
 
 export default function UserConfig() {
-  const handleLogout = () => {
-    // TODO: implementar lógica de logout
-    alert("Sair clicado!");
+  const router = useRouter();
+
+  const handleLogout = async () => {
+    await logoutUser();
+    router.replace("/login/login");
   };
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Configurações</Text>
-      <TouchableOpacity style={styles.button} onPress={handleLogout}>
-        <Text style={styles.buttonText}>Sair</Text>
-      </TouchableOpacity>
-    </View>
+    <Container>
+      <Title>Configurações</Title>
+      <Button onPress={handleLogout}>
+        <ButtonText>Sair</ButtonText>
+      </Button>
+    </Container>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#fff",
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: "bold",
-    marginBottom: 32,
-  },
-  button: {
-    backgroundColor: "#e74c3c",
-    paddingVertical: 12,
-    paddingHorizontal: 32,
-    borderRadius: 8,
-  },
-  buttonText: {
-    color: "#fff",
-    fontSize: 18,
-    fontWeight: "bold",
-  },
-});

@@ -32,7 +32,7 @@ export default function LoginScreen() {
     if (email === "admin@admin.com" && password === "admin@admin") {
       setError("");
       await saveLoginStatus(true);
-      router.replace("/calls/calls");
+      router.replace("/calls");
     } else {
       setError("Email ou senha inválidos.");
     }

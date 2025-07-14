@@ -1,2 +1,2 @@
-import Calls from "./calls";
+import Calls from "../../calls/calls";
 export default Calls;

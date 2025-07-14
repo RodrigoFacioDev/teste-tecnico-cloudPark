@@ -165,14 +165,7 @@ export default function CallModal({
             containerStyle={{ marginBottom: 16 }}
           />
           {errors.category && <ErrorText>{errors.category}</ErrorText>}
-          <Select
-            value={status}
-            onValueChange={(itemValue) => setStatus(itemValue as CallStatus)}
-            options={statusOptions.map((opt) => ({ label: opt, value: opt }))}
-            placeholder="Selecione o status"
-            label="Status"
-            containerStyle={{ marginBottom: 16 }}
-          />
+
           <ButtonRow>
             <Button onPress={handleSave} style={{ flex: 1, marginRight: 6 }}>
               Salvar

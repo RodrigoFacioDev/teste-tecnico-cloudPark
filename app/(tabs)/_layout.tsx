@@ -1,24 +1,26 @@
+import AntDesign from "@expo/vector-icons/AntDesign";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 import { Tabs } from "expo-router";
-
 export default function TabLayout() {
   return (
-    <Tabs screenOptions={{ tabBarActiveTintColor: "blue" }}>
+    <Tabs
+      screenOptions={{ tabBarActiveTintColor: "#398ccb", headerShown: false }}
+    >
       <Tabs.Screen
-        name="calls"
+        name="calls/index"
         options={{
-          title: "Chamadas",
+          title: "Chamados",
           tabBarIcon: ({ color }) => (
-            <FontAwesome size={28} name="phone" color={color} />
+            <AntDesign name="notification" size={24} color={color} />
           ),
         }}
       />
       <Tabs.Screen
-        name="UserConfig"
+        name="UserConfig/UserConfig"
         options={{
-          title: "Configurações",
+          title: "Chamados",
           tabBarIcon: ({ color }) => (
-            <FontAwesome size={28} name="cog" color={color} />
+            <FontAwesome name="gear" size={24} color={color} />
           ),
         }}
       />

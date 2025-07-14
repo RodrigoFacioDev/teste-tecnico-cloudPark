@@ -1,4 +1,4 @@
-import { Call, CallStatus } from "@/app/(tabs)/calls/types";
+import { Call, CallStatus } from "@/app/Screens/calls/types";
 import { create } from "zustand";
 import api from "./api";
 

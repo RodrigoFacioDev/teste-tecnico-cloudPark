@@ -1,17 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { ActivityIndicator, View } from "react-native";
-import { getLoginStatus } from "../hooks/useUser";
-import CallsPage from "./(tabs)/calls/calls";
+import { getLoginStatus, useUserStore } from "../hooks/useUser";
+import Calls from "./(tabs)/calls";
 import LoginScreen from "./login/login";
 
 export default function Index() {
   const [loading, setLoading] = useState(true);
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const isLoggedIn = useUserStore((state) => state.isLoggedIn);
 
   useEffect(() => {
     (async () => {
-      const logged = await getLoginStatus();
-      setIsLoggedIn(logged);
+      await getLoginStatus();
       setLoading(false);
     })();
   }, []);
@@ -28,5 +27,5 @@ export default function Index() {
     return <LoginScreen />;
   }
 
-  return <CallsPage />;
+  return <Calls />;
 }

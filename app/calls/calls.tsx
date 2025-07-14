@@ -3,7 +3,7 @@ import Input from "@/common/Input/Input";
 import Select from "@/common/Select/Select";
 import { useCallsStore } from "@/hooks/useCalls";
 import React, { useEffect, useState } from "react";
-import { ActivityIndicator, FlatList, Text } from "react-native";
+import { ActivityIndicator, FlatList, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import CallCard from "./components/CallCard/CallCard";
 import CallModal from "./components/ModalCall/CallModal";
@@ -59,7 +59,15 @@ export default function CallsPage() {
       edges={["top", "left", "right"]}
     >
       <Container>
-        <PageTitle>Meus Chamados</PageTitle>
+        <View
+          style={{
+            flexDirection: "row",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <PageTitle style={{ marginRight: 8 }}>Meus Chamados</PageTitle>
+        </View>
         <Input
           placeholder="Pesquisar por nome do chamado..."
           value={search}
