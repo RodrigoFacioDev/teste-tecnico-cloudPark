@@ -27,7 +27,7 @@ yarn
 # ou
 npm install
 ```
-### 1. Inicie o JSON Server
+### 2. Inicie o JSON Server
 ```bash
 npx json-server db.json
 ```
