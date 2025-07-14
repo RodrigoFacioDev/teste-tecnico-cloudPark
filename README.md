@@ -33,10 +33,11 @@ npx json-server db.json
 ```
 Isso irá iniciar um servidor local (por padrão em http://localhost:3000).
 
+### 3. Inicie o Expo
 ```bash
 yarn start
 # ou
-npm start
+npm run start
 ```
 Testando no celular
 Instale o app Expo Go da App Store (iOS) ou Google Play (Android).
