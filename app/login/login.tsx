@@ -1,11 +1,6 @@
 import { useRouter } from "expo-router";
 import React, { useState } from "react";
-import {
-  Image,
-  KeyboardAvoidingView,
-  Platform,
-  ScrollView,
-} from "react-native";
+import { KeyboardAvoidingView, Platform, ScrollView } from "react-native";
 import Button from "../../common/Button/Button";
 import Input from "../../common/Input/Input";
 import { saveLoginStatus } from "../../hooks/useUser";
@@ -50,12 +45,7 @@ export default function LoginScreen() {
       >
         <Container>
           <FormWrapper>
-            <LogoWrapper>
-              <Image
-                source={require("../../assets/images/logo-cloudpark.png")}
-                style={{ width: 180, height: 60, resizeMode: "contain" }}
-              />
-            </LogoWrapper>
+            <LogoWrapper></LogoWrapper>
             <Title>Bem-vindo!</Title>
             <Subtitle>Faça login para continuar.</Subtitle>
             <Input

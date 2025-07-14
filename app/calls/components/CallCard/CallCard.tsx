@@ -1,6 +1,7 @@
 import Button from "@/common/Button/Button";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 import React, { useState } from "react";
+import { View } from "react-native";
 import { Call } from "../../types";
 import ModalCallDetails from "../ModalCallDetails/ModalCallDetails";
 import {
@@ -33,7 +34,7 @@ export default function CallCard({ call }: CallCardProps) {
   const [modalVisible, setModalVisible] = useState(false);
 
   return (
-    <>
+    <View>
       <CardContainer status={call.status}>
         <Title>{call.title}</Title>
         <CategoryBadge>
@@ -75,6 +76,6 @@ export default function CallCard({ call }: CallCardProps) {
         call={call}
         onClose={() => setModalVisible(false)}
       />
-    </>
+    </View>
   );
 }
