@@ -52,3 +52,9 @@ Yarn ou npm
 Expo CLI (instalado com npm install -g expo-cli, se necessário)
 
 JSON Server (npx já cuida disso, mas pode ser instalado globalmente também)
+### Para rodar os testes 
+```bash
+yarn test
+# ou
+npm run test
+```
