@@ -1,50 +1,53 @@
-# Welcome to your Expo app 👋
+# 📱 Meu App com Expo + JSON Server
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Este projeto é um app mobile desenvolvido com **React Native (Expo)** e utiliza o **JSON Server** para simular uma API REST durante o desenvolvimento.
 
-## Get started
+---
 
-1. Install dependencies
+## Pré-requisitos
 
-   ```bash
-   npm install
-   ```
+Antes de começar, certifique-se de ter o seguinte instalado:
 
-2. Start the app
+* **Node.js**: Inclui o npm (Node Package Manager). Você pode baixá-lo em [nodejs.org](https://nodejs.org/).
+* **Yarn** (Opcional, mas recomendado): Um gerenciador de pacotes alternativo ao npm. Você pode instalá-lo com `npm install -g yarn`.
+* **Expo Go** (no seu celular): Baixe o aplicativo "Expo Go" na App Store (iOS) ou Google Play Store (Android).
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## 🚀 Como rodar o projeto
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Siga os passos abaixo para executar o projeto localmente.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### 1. Instale as dependências
 
-## Get a fresh project
-
-When you're ready, run:
+Você pode usar **Yarn** ou **npm**:
 
 ```bash
-npm run reset-project
+yarn
+# ou
+npm install
 ```
+### 1. Inicie o JSON Server
+```bash
+npx json-server db.json
+```
+Isso irá iniciar um servidor local (por padrão em http://localhost:3000).
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+```bash
+yarn start
+# ou
+npm start
+```
+Testando no celular
+Instale o app Expo Go da App Store (iOS) ou Google Play (Android).
 
-## Learn more
+Escaneie o QR Code exibido no terminal ou no navegador quando rodar yarn start.
 
-To learn more about developing your project with Expo, look at the following resources:
+🛠 Requisitos
+Node.js (versão recomendada: LTS)
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Yarn ou npm
 
-## Join the community
+Expo CLI (instalado com npm install -g expo-cli, se necessário)
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+JSON Server (npx já cuida disso, mas pode ser instalado globalmente também)
